@@ -1,0 +1,510 @@
+/*
+  Created originally on : 05-06-2014
+  Modifications on : 12-09-2014
+  
+  Company     : SaaSify Ltd.
+  Author      : Eamonn Killian
+  Web         : www.eamonnkillian.com
+  Contact     : eamonnkillian@gmail.com
+
+  This is the main style sheet for the common files, such as 
+  header and footer.
+  
+*/
+
+/* ---------------------------------------------
+* Set up Main Page
+* -------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+//@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    color:#fff;
+    font-family: "Quicksand";
+    background-color: #ecf0f1;
+    overflow: hidden;
+}
+
+.body {
+    clear: both;
+    overflow: hidden;
+}
+
+.mainlogo {
+    width: 20%;
+}
+
+.backward { 
+    display: inline-block;
+    -moz-transform: scale(-1, 1); 
+    -webkit-transform: scale(-1, 1);  
+    transform: scale(-1, 1); 
+} 
+
+.base_full_menu_span_image {
+    cursor: pointer;
+}
+
+.downloadbutton {
+    cursor: pointer; 
+    display: inline-block; 
+    color: #fff;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    padding: 3% 2%; 
+    border: none;
+    margin-left: -1px;  
+    margin-right: 1%;
+    background-color: #202e40; 
+    float: left; /* IE 9 Fix */
+}
+
+.downloadtable {
+    position: relative;
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    border: 0;
+}
+
+#altmenu {
+    //display: none;
+}
+
+.floating_menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    background-color: #000;
+    z-index: 1000;
+}
+
+.floating_menu:hover {
+    
+}
+
+.floating_menu_span {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.floating_menu_span_image {
+    position: relative;
+    float: left;
+    width: 100%;
+    z-index: 100;
+    margin-top: 10%;
+}
+
+.slideout_menu {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    height: 100%;
+    width: 50%;
+    color: #fff;
+    background-color: #000;
+    z-index: 100;
+}
+
+.slideout_menu ul {
+    position: relative;
+    float: left;
+    top: 60px;
+}
+
+.slideout_menu li {
+    list-style-type: none;
+}
+
+.slideout_menu li:hover {
+    color: #ff0000;
+}
+
+.tooltip {
+    display: none;
+    letter-spacing: 0px;
+    font-size: 0.8em;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 0;
+    text-align: left;
+    width: 125px;
+    color: #fff;
+    z-index: 10;
+}
+
+.tooltiptext {
+    text-align: center;
+    color: #fff;
+}
+
+.tooltip:before {
+	position: absolute;
+	display: inline-block;
+	border-top: 7px solid transparent;
+	border-right: 7px solid #eee;
+	border-bottom: 7px solid transparent;
+	border-right-color: rgba(0, 0, 0, 0.2);
+	left: -14px;
+	top: 10px;
+	content: '';
+}
+
+.tooltip:after {
+	position: absolute;
+	display: inline-block;
+	border-top: 6px solid transparent;
+	border-right: 6px solid #eee;
+	border-bottom: 6px solid transparent;
+	left: -12px;
+	top: 11px;
+	content: '';
+}
+
+/* -------------------------------------------
+   The first page
+---------------------------------------------- */
+
+.base_full_viewer_frame_top {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 80%;
+}
+
+.base_full_viewer_frame_continue {
+    position: fixed;
+    bottom: 0;
+    height: 10%;
+}
+
+#webtitle {
+    color: #000;
+    font-size: 2.25em;
+    letter-spacing: 5px;
+}
+
+#continuearrow {
+    position: relative;
+    float: left;
+    color: #000;
+    cursor: pointer;
+}
+
+/* -------------------------------------------
+   The second page
+---------------------------------------------- */
+
+.column {
+    position: relative;
+    float: left;
+}
+
+.columnspacer {
+    position: relative;
+    float: left;
+    height: 5%;
+    width: 100%;
+}
+
+/* -------------------------------------------
+   The cloud pages
+---------------------------------------------- */
+
+.rightsidearrow {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.leftsidearrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#cloud-1, #cloud-2, #cloud-3, #cloud-4, #cloud-5, #cloud-6, #cloud-7, #cloud-8, #cloud-9 {
+    display: none;
+}
+
+#download-1, #download-2 {
+    display: none;
+}
+
+.imagespan {
+    position: relative;
+    float: left;
+    height: 60%;
+    width: 100%;
+    text-align: center;
+}
+
+.bigimagespan {
+    position: relative;
+    float: left;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+.halfimagespan {
+    position: relative;
+    float: left;
+    height: 40%;
+    width: 50%;
+    text-align: center;
+}
+
+.big-image {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.medium-img {
+    position: relative;
+    float: left;
+    height: 200px;
+}
+
+.small-image {
+    position: relative;
+    float: left;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.very-small-img {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 30px;
+}
+
+.sources {
+    width: 100%;
+    font-size: 0.5em;
+}
+
+#cloud-6 table {
+    position: relative;
+    float: left;
+    height: 50%;
+}
+
+#cloud-6 table td {
+    font-size: 0.8em;
+}
+
+#cloud-7 table {
+    position: relative;
+    float: left;
+    height: 45%;
+}
+
+#cloud-7 table td {
+    font-size: 0.8em;
+}
+
+/* -------------------------------------------
+   The mmog pages
+---------------------------------------------- */
+
+#mmog-1, #mmog-2, #mmog-3, #mmog-4, #mmog-5, #mmog-6, #mmog-7, #mmog-8 {
+    display: none;
+}
+
+#mmogimg {
+    margin-left: auto;
+    margin-right: auto;
+    height: 37%;
+    width: 100%;
+}
+
+.listoflinks {
+    position: relative;
+    float: left;
+    font-size: 0.6em;
+}
+
+/* -------------------------------------------
+   The gamification pages
+---------------------------------------------- */
+
+#gamification-1, #gamification-2, #gamification-3, #gamification-4, #gamification-5, #gamification-6, #gamification-7, #gamification-8, #gamification-9 {
+    display: none;
+}
+
+#gamification-4 table td {
+    width: 50%;
+}
+
+.maslow {
+    height: 60%;
+    width: 100%;
+}
+
+.listoflinks {
+    position: relative;
+    float: left;
+    font-size: 0.6em;
+}
+
+/* -------------------------------------------
+   The bigdata pages
+---------------------------------------------- */
+
+#bigdata-1 {
+    display: none;
+}
+
+.bigdataPic{
+    margin-left: 15%;
+    width: 70%;
+    //height: 30%;
+}
+
+.listoflinks {
+    position: relative;
+    float: left;
+    font-size: 0.6em;
+}
+
+/* -------------------------------------------
+   The footer/share page
+---------------------------------------------- */
+.mainfooter {
+    position: relative;
+    float: left;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    background-color: #000;
+    z-index: 1000;
+}
+
+#FooterLHS {
+    position: absolute;
+    top: 0;
+    float: left;
+    width: 40%;
+    padding: 0;
+    margin-top: 30%;
+}
+
+#FooterLHS a{
+    color: #fff;
+} 
+
+#FooterLHSIcons {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+#FooterMID {
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 10%;
+    text-align: left;
+}
+
+#footerArrow {
+    width: 20px;
+    height: 10px;
+    margin-top: 5%;
+}
+
+#FooterRHS {
+    position: relative;
+    float: right;
+    width: 40%;
+    text-align: right;
+    margin-right: 15%;
+    margin-top: 30%;
+    color: #fff;
+}
+
+#FooterRHSSpan {
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+#FooterRHS a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#FooterRHS a:hover {
+    text-decoration: none;
+    color: #cc3300;
+}
+
+@font-face {
+    font-family: 'Entypo-Social';
+    src: url('../font/entypo-social.eot');
+    src: local('☺'),
+        url('../font/entypo-social.woff') format('woff'),
+        url('../font/entypo-social.ttf') format('truetype'),
+        url('../font/entypo-social.svg#webfontIyfZbseF') format('svg');
+}
+
+.data-icon {
+    font-family: 'Entypo-Social';
+    content: attr(data-icon);
+    font-size: 4em;
+    color: white;
+    background: none;
+    text-decoration: none;
+}
+
+#FooterLHSIcons a:hover {
+    text-decoration: none;
+    color: #cc3300;
+}
+
+#FooterLHSIcons {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    text-align: center;
+}
+
+.FooterLHSIconsSpan {
+    margin-right: 5%;
+}
